@@ -1,28 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import characters from './characters.json'
+import Wrapper from './components/Wrapper';
+import Header from './components/Header';
+import Jumbotron from "./components/Jumbotron";
+import ImageCard from './components/ImageCard';
+import Footer from './components/Footer';
+
+import "./index.css"
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Wrapper>
+        <Header />
+        <Jumbotron />
+        <div className="row">
+          <ImageCard></ImageCard>
+        </div>
+        <Footer />
+      </Wrapper>
     );
   }
 }
+
+// render() {
+//   return (
+//     <Wrapper>
+//       <NavBar bestScore={this.state.bestScore} currentScore={this.state.correctGuesses}>
+//         {this.renderHeader()}
+//       </NavBar>
+//       <Jumbotron></Jumbotron>
+//       <div className="row">
+//         {this.state.puppies.map(puppy => (
+//           <ImageCard
+//             click={this.handlePuppyClick}
+//             id={puppy.id}
+//             image={puppy.image}
+//             name="Puppy"
+//             key={puppy.id}
+//           />
+//         ))}
+//       </div>
+//       <Footer></Footer>
+//     </Wrapper>
+//   );
+// }
 
 export default App;
