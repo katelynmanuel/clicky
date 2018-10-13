@@ -29,7 +29,7 @@ class App extends Component {
 
     // If user clicks on image once change character click state, header message, and score.
     if (clickedCharacter.clicked === false) {
-      headerMessage = "You guessed correctly! Keep clicking to guess more!";
+      headerMessage = "You guessed correctly!";
       clickedCharacter.clicked = true;
       correct++
 
@@ -78,11 +78,8 @@ class App extends Component {
         <div className="row">
           {this.state.characters.map(character => (
             <ImageCard
-              click={this.handleClick}
-              id={character.id}
-              image={character.image}
-              name={character.name}
-              key={character.id}
+              handleClick={this.handleClick}
+              data={character}
             />
           ))}
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Jumbotron.css";
 
-const Jumbotron = props => (
+const Jumbotron = () => (
     <div className="jumbotron">
         <h1 className="display-4">Clicky Game</h1>
         <p className="lead">
