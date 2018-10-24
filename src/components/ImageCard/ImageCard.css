@@ -1,5 +1,12 @@
+.main {
+    margin-bottom: 5%;
+}
+
 #characterImage {
-    height: 170px;
-    width: 170px;
-    border: none;
+    height: 150px;
+    width: 150px;
+}
+
+.card {
+    margin-top: 5%;
 }
