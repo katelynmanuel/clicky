@@ -2,7 +2,7 @@
   "name": "clicky",
   "version": "0.1.0",
   "private": true,
-  "main": "./public/index.html",
+  "main": "./build/index.html",
   "homepage": "https://katelynmanuel.github.io/clicky/",
   "dependencies": {
     "gh-pages": "^2.0.1",
